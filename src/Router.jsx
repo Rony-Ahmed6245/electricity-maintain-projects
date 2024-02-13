@@ -8,6 +8,7 @@ import Login from './page/Login';
 import Dashboard from './page/Dashboard';
 import AddMaintain from './page/AddMaintain';
 import ViewMaintain from './page/ViewMaintain';
+import Develper from './page/Develper';
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
             {
                 path: '/login',
                 element: <Login></Login>,
+            },
+            {
+                path: '/dev',
+                element: <Develper></Develper>,
             },
 
         ]

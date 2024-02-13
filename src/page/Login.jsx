@@ -41,11 +41,11 @@ const Login = () => {
     };
 
     return (
-        <div className="flex justify-center items-center mt-28 px-2">
+        <div className="flex justify-center  items-center mt-28 px-2">
             <div className="max-w-7xl mx-auto">
                 {!isLoggedIn ? (
-                    <div className=" bg-gradient-to-r from-[#65B741]  to-[#FFB534] border rounded-sm p-7">
-                        <h4 className="title text-white uppercase text-center">এডমিন</h4>
+                    <div className=" shadow-xl border rounded-sm p-7">
+                        <h4 className="text-xl text-[#65B741] uppercase text-center">এডমিন</h4>
                         <form onSubmit={handleSubmit}>
                             <div className="field">
                                 <svg className="input-icon" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +81,7 @@ const Login = () => {
                                     onChange={handleInputChange}
                                 />
                             </div>
-                            <button className="w-full rounded-md mt-4 py-2 font-semibold uppercase bg-white text-black  outline-none border-none px-5" type="submit">
+                            <button className="w-full rounded-md mt-4 py-2 font-semibold uppercase bg-[#65B741] text-white  outline-none border-none px-5" type="submit">
                                 লগইন
                             </button>
                             {errorMessage && <p className="text-red-500">{errorMessage}</p>}

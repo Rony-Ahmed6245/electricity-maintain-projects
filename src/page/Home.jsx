@@ -1,9 +1,203 @@
-
+import bg from '../assets/bg.jpg'
+import bg2 from '../assets/bg2.jpg'
+import bg3 from '../assets/bg3.jpg'
+import bg4 from '../assets/bg4.jpg'
+import bg5 from '../assets/bg-5.jpg'
+import meor1 from '../assets/1.png'
+import meor2 from '../assets/2.png'
+import meor3 from '../assets/3.png'
+import meor4 from '../assets/4.png'
+import meor5 from '../assets/5.png'
+import meor6 from '../assets/6.png'
+import { NavLink } from 'react-router-dom'
+import { FiPhoneOutgoing } from "react-icons/fi";
+import { FaFacebook } from "react-icons/fa6";
+import { Carousel } from 'react-responsive-carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { FaGithub } from "react-icons/fa";
+import { HiMiniGlobeAlt } from "react-icons/hi2";
 
 const Home = () => {
     return (
-        <div>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem ea quos accusantium sint ratione sed dolore modi voluptates quo maiores ipsum magnam provident et, expedita quae doloremque facilis veniam repudiandae ad neque molestias est vel accusamus. Ad id voluptas omnis veritatis, quos ratione assumenda similique porro incidunt magnam sed maiores consectetur. Non sed molestiae provident suscipit hic sint, ipsum placeat, architecto iste molestias necessitatibus? Natus dicta corrupti perspiciatis dolores minima mollitia unde? Maxime rem, exercitationem eligendi voluptates commodi sint quasi sit, molestias culpa, sunt vero? Vitae temporibus iste consectetur quam placeat, tempore culpa voluptas at. Modi in molestias ut blanditiis praesentium deleniti pariatur ratione illo dolorum dolorem, sint accusantium velit necessitatibus. Voluptatibus officiis placeat iure quisquam! Excepturi a id laborum error alias earum, unde enim, non aliquid sit illum, sapiente distinctio aliquam perferendis voluptatem. Doloremque impedit, consequatur, vero sapiente cum suscipit veritatis sequi maiores assumenda doloribus cumque nam laudantium exercitationem unde reprehenderit. Nulla perferendis nobis laboriosam corrupti officiis fugit voluptatem maxime, minima dolorem, nisi magnam beatae totam cupiditate, quam quasi velit provident obcaecati quidem harum consequuntur blanditiis voluptas similique! Consectetur ratione fugiat porro ipsa eaque sint, consequatur praesentium totam explicabo sequi. Repudiandae, vitae assumenda optio, harum libero, nam ea nesciunt dolore nemo obcaecati id molestiae ipsa aliquam eos velit accusamus pariatur deleniti eaque cupiditate. Et tempore, quidem dolores repellat suscipit reiciendis ratione, consequatur earum ut excepturi at quos praesentium culpa sed assumenda ducimus facere! Nihil molestias, nobis facilis veritatis fugiat sapiente voluptatibus voluptas, quae porro est nemo necessitatibus possimus quia repellendus, sint laboriosam quisquam consectetur harum nesciunt numquam eos ullam aspernatur iste. Quod perspiciatis quaerat nesciunt suscipit deleniti nulla, nam amet quasi commodi, laborum tenetur blanditiis doloribus distinctio dicta consequatur illum exercitationem labore sit dolorem nisi rem qui! Rem, quia molestiae voluptate odio perferendis ducimus praesentium placeat. Laboriosam, temporibus! Odit consequuntur libero iusto quia iure perspiciatis distinctio porro voluptates odio unde excepturi error nobis ea rem sunt ipsa, minima, obcaecati quae delectus doloribus. Enim voluptate necessitatibus, adipisci error repellendus mollitia ut maiores inventore eaque eligendi aspernatur veritatis vitae minima excepturi ab debitis quisquam dolorem omnis tempora blanditiis incidunt! Saepe quos praesentium ab? Sunt expedita cupiditate commodi minima quas ratione, sint labore ipsam facilis, amet, sit est corporis! Id, ipsa unde quibusdam quo asperiores, aliquid animi possimus officia quae eligendi iusto magni sequi ut aspernatur accusamus? Ab, deleniti dolores saepe ducimus sapiente repellat at magnam consequatur nihil quaerat voluptatem et excepturi deserunt? Expedita debitis, ratione saepe accusamus pariatur quae natus exercitationem molestiae ipsa necessitatibus accusantium quis nihil iusto architecto quia quo nesciunt doloribus reprehenderit? Veritatis, possimus neque ea quam iusto eaque similique molestias vitae sed. Ullam exercitationem consequuntur perferendis unde, voluptatum impedit neque necessitatibus maxime eius fuga praesentium corrupti nisi molestias inventore nesciunt sed expedita nemo adipisci blanditiis voluptas. Nisi ut possimus, a mollitia labore est unde odio blanditiis velit natus quis error recusandae fuga quibusdam, excepturi cumque. Atque quisquam ipsa eius iure. Aliquam pariatur, ad ex atque deleniti rerum qui quae soluta harum minima totam ut iste minus fugit corporis reiciendis nesciunt assumenda suscipit reprehenderit fugiat sint quidem doloribus earum? Ullam ad provident error minus iusto voluptatibus quam laudantium quia sunt at aliquam doloremque deserunt libero dicta repudiandae assumenda dolorum sequi adipisci vero, eos fugit ratione! Itaque alias enim, expedita cupiditate quaerat deleniti ad quasi beatae nisi eveniet vel ipsum tenetur laudantium voluptatibus modi dolore soluta quisquam dolorem debitis laborum impedit excepturi. Nihil illum vel, commodi ratione delectus expedita saepe similique et officiis minus veritatis deserunt ipsa magni placeat repellendus numquam consequatur? Culpa id suscipit ipsum! Obcaecati rerum in odit doloremque. Harum illum laborum nesciunt, rerum nemo, delectus enim molestias praesentium eos ut ducimus dolor sunt quam, hic quasi ullam laboriosam cumque earum necessitatibus? Dolore dolores quasi totam hic iure laborum. Hic veritatis molestias autem, consequuntur facere recusandae ab doloribus modi sed quis magnam ea voluptates explicabo officiis perspiciatis? Incidunt iusto totam amet aspernatur non quod, voluptatibus corrupti iste laborum commodi quis, reprehenderit autem corporis architecto. Corporis cumque dolore soluta! Commodi eos vitae corrupti harum ipsum facilis tempora, ad aliquam possimus iure soluta fugit repudiandae magni ducimus veritatis unde neque! Autem sint dignissimos fugiat nihil consequuntur nesciunt voluptates quisquam, facere eligendi perspiciatis nostrum laboriosam nam voluptate natus est amet ut. Modi, rem? Exercitationem cupiditate ducimus cum, animi at eos provident, corrupti, repudiandae dolorum autem blanditiis sequi facilis fugit reprehenderit voluptatum esse! Maxime reiciendis id distinctio cupiditate suscipit eum repellat eius, voluptatibus velit, deleniti ratione nam, ex voluptas odio tenetur obcaecati. Deleniti consequatur vitae nihil eius commodi beatae nostrum dolorem ratione asperiores ab libero corrupti aliquid aliquam est laborum, nam illo repellat nulla ipsum odio qui tenetur. Reprehenderit eligendi magni error, odit libero ducimus. Amet, ipsa, facilis assumenda fuga distinctio quaerat officia cum aspernatur magni ipsum libero quisquam eum! Est iusto architecto possimus ad voluptate. Blanditiis laudantium vel magnam aspernatur laborum, nobis similique! Eligendi tempore odit aspernatur perspiciatis. Reprehenderit cupiditate sequi earum labore similique deleniti expedita obcaecati unde, error ad vitae, fugit modi quia, quis praesentium. Veniam earum quis, sunt commodi error dignissimos neque rerum dolorem voluptatum nulla repellendus ipsum reprehenderit amet? Aut reiciendis sint suscipit iusto ipsam laboriosam explicabo in illo ullam! Facere minima voluptate consequatur excepturi. Quos, porro distinctio? Itaque odio vel impedit explicabo at amet minima officiis quo. Neque veniam cumque hic animi ratione officiis quia illo earum obcaecati, deleniti delectus illum suscipit minus perspiciatis nulla molestiae culpa vitae maiores voluptas odio magnam, ea quam iste alias? In facilis doloribus ad cupiditate delectus, rerum, maiores pariatur necessitatibus nisi maxime quae vel quas non consequatur sapiente laboriosam magni dolore dolorum voluptas ipsam similique ratione. Ut, maiores non, doloribus dicta architecto accusamus suscipit omnis, porro nisi natus repellat eaque expedita ex minima in nulla fugiat blanditiis consectetur ducimus cupiditate. Voluptatum repellat suscipit maxime pariatur ex quam corrupti sapiente possimus? Laboriosam autem inventore dolore unde, modi eaque nisi dolorum ad quibusdam quas dolorem, animi quae facilis assumenda iusto porro illum quia error neque commodi, sint esse id aliquid? Nostrum neque aliquam similique, necessitatibus aspernatur commodi fuga, omnis consectetur obcaecati alias exercitationem.
+        <div className='bg1'>
+            <div className='max-w-5xl mx-auto bg-white  shadow-2xl' >
+
+                {/* ------------------banner ------------------ */}
+                <Carousel
+                    autoPlay
+                    infiniteLoop
+                >
+                    <div>
+                        <img src={bg} alt="" loading="lazy" />
+                    </div>
+                    <div>
+                        <img src={bg2} alt="" loading="lazy" />
+                    </div>
+                    <div>
+                        <img src={bg3} alt="" loading="lazy" />
+                    </div>
+                    <div>
+                        <img src={bg4} alt="" loading="lazy" />
+                    </div>
+                    <div>
+                        <img src={bg5} alt="" loading="lazy" />
+                    </div>
+                </Carousel>
+
+                <marquee className="text-sm text-black">ভাঙ্গুড়া পৌরসভার মধ্যে যে কোন স্থানের সোলার বাতি, বৈদ্যূতিক বাতি নষ্ট থাকলে আপনি আমাদের  অভিযোগ করুন।</marquee>
+
+
+                {/* -----------card  ----------------------*/}
+                <h1 className='text-center text-xl mt-10 mb-10'>----ভাঙ্গুড়া পৌরসভার কার্যরত ব্যাক্তিবর্গ --- </h1>
+                <div className='grid grid-cols-1 md:grid-cols-2  px-4 lg:grid-cols-3 gap-4 mb-20'>
+                   
+ 
+                    {/* card  */}
+                    <div className="">
+                        <div className=" border h-[350px] rounded-md p-10 shadow-md">
+                            <div className=" ">
+                                <div className="flex justify-center items-center gap-4 pt-6 ">
+                                    <img className="w-[100px] md:w-[100px]  rounded-full" src={meor1} alt="" />
+                                </div>
+                                <div className="space-y-1 p-3">
+                                    <h1 className="text-center text-[15px] font-bold text-gray-600 uppercase">আলহাজ্ব মোঃ গোলাম হাসনাইন রাসেল</h1>
+                                    <p className="text-center text-[12px] font-semibold text-[#65B741]">মেয়র, ভাঙ্গুড়া পৌরসভা।</p>
+                                   
+                                </div>
+                                <div className="flex justify-center items-center mt-2 gap-4 pb-5">
+
+
+                                    <a target='_blank' href="#" ><FiPhoneOutgoing  className=" text-2xl rounded-full text-[#65B741]" /></a>
+                                    <a target="_blank" href="#">< FaFacebook  className=" text-2xl text-[#65B741] " /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="">
+                        <div className=" border h-[350px] rounded-md p-10 shadow-md">
+                            <div className=" ">
+                                <div className="flex justify-center items-center gap-4 pt-6 ">
+                                    <img className="w-[100px] md:w-[100px]  rounded-full" src={meor4} alt="" />
+                                </div>
+                                <div className="space-y-1 p-3">
+                                    <h1 className="text-center text-[15px] font-bold text-gray-600 uppercase">মোঃ আমিনুল ইসলাম</h1>
+                                    <p className="text-center text-[12px] font-semibold text-[#65B741]">নির্বাহী প্রকৌশলী, ভাঙ্গুড়া পৌরসভা।</p>
+                                   
+                                </div>
+                                <div className="flex justify-center items-center mt-2 gap-4 pb-5">
+
+
+                                    <a target='_blank' href="#" ><FiPhoneOutgoing  className=" text-2xl rounded-full text-[#65B741]" /></a>
+                                    <a target="_blank" href="#">< FaFacebook  className=" text-2xl text-[#65B741] " /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div className="">
+                        <div className=" border h-[350px] rounded-md p-10 shadow-md">
+                            <div className=" ">
+                                <div className="flex justify-center items-center gap-4 pt-6 ">
+                                    <img className="w-[100px] md:w-[100px]  rounded-full" src={meor6} alt="" />
+                                </div>
+                                <div className="space-y-1 p-3">
+                                    <h1 className="text-center text-[15px] font-bold text-gray-600 uppercase">জনাব উত্তম কুমার সাহা</h1>
+                                    <p className="text-center text-[12px] font-semibold text-[#65B741]">পৌরনির্বাহী কর্মকর্তা, ভাঙ্গুড়া পৌরসভা।</p>
+                                   
+                                </div>
+                                <div className="flex justify-center items-center mt-2 gap-4 pb-5">
+
+
+                                    <a target='_blank' href="#" ><FiPhoneOutgoing  className=" text-2xl rounded-full text-[#65B741]" /></a>
+                                    <a target="_blank" href="#">< FaFacebook  className=" text-2xl text-[#65B741] " /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="">
+                        <div className=" border h-[350px] rounded-md p-10 shadow-md">
+                            <div className=" ">
+                                <div className="flex justify-center items-center gap-4 pt-6 ">
+                                    <img className="w-[100px] md:w-[100px]  rounded-full" src={meor5} alt="" />
+                                </div>
+                                <div className="space-y-1 p-3">
+                                    <h1 className="text-center text-[15px] font-bold text-gray-600 uppercase">জনাব নাজমুল হুদা</h1>
+                                    <p className="text-center text-[12px] font-semibold text-[#65B741]"> হিসাবরক্ষণ কর্মকর্তা, ভাঙ্গুড়া পৌরসভা।</p>
+                                   
+                                </div>
+                                <div className="flex justify-center items-center mt-2 gap-4 pb-5">
+
+
+                                    <a target='_blank' href="#" ><FiPhoneOutgoing  className=" text-2xl rounded-full text-[#65B741]" /></a>
+                                    <a target="_blank" href="#">< FaFacebook  className=" text-2xl text-[#65B741] " /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="">
+                        <div className=" border h-[350px] rounded-md p-10 shadow-md">
+                            <div className=" ">
+                                <div className="flex justify-center items-center gap-4 pt-6 ">
+                                    <img className="w-[100px] md:w-[100px]  rounded-full" src={meor3} alt="" />
+                                </div>
+                                <div className="space-y-1 p-3">
+                                    <h1 className="text-center text-[15px] font-bold text-gray-600 uppercase"> মোঃ নয়ন মাহমুদ</h1>
+                                    <p className="text-center text-[12px] font-semibold text-[#65B741]">     বিদ্যুৎ মিস্ত্রি, ভাঙ্গুড়া পৌরসভা।</p>
+                                   
+                                </div>
+                                <div className="flex justify-center items-center mt-2 gap-4 pb-5">
+
+
+                                    <a target='_blank' href="#" ><FiPhoneOutgoing  className=" text-2xl rounded-full text-[#65B741]" /></a>
+                                    <a target="_blank" href="#">< FaFacebook  className=" text-2xl text-[#65B741] " /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="">
+                        <div className=" border h-[350px] rounded-md p-10 shadow-md">
+                            <div className=" ">
+                                <div className="flex justify-center items-center gap-4 pt-6 ">
+                                    <img className="w-[100px] md:w-[100px]  rounded-full" src={meor2} alt="" />
+                                </div>
+                                <div className="space-y-1 p-3">
+                                    <h1 className="text-center text-[15px] font-bold text-gray-600 uppercase"> মোঃ এনামুল হক</h1>
+                                    <p className="text-center text-[12px] font-semibold text-[#65B741]">লাইনম্যান, ভাঙ্গুড়া পৌরসভা। </p>
+                                   
+                                </div>
+                                <div className="flex justify-center items-center mt-2 gap-4 pb-5">
+
+
+                                    <a target='_blank' href="#" ><FiPhoneOutgoing  className=" text-2xl rounded-full text-[#65B741]" /></a>
+                                    <a target="_blank" href="#">< FaFacebook  className=" text-2xl text-[#65B741] " /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                {/* -------------------footer  ------------------*/}
+                <hr />
+                <div className='bg-base-200 pb-5'>
+                    <footer className="footer footer-content py-10 flex justify-center  text-base-content rounded">
+                        <nav className="grid grid-flow-col gap-4">
+                            <NavLink className="hover:text-[#65B741] font-bold hover:underline" to="/">হোম</NavLink>
+                            <NavLink className="hover:text-[#65B741] font-bold hover:underline" to="/reportBox">অভিযোগ</NavLink>
+                            <NavLink className="hover:text-[#65B741] font-bold hover:underline" to="/viewWork"> কার্যবলি   </NavLink>
+                            <NavLink className="hover:text-[#65B741] font-bold hover:underline" to="/login">লগইন</NavLink>
+                            <NavLink className="hover:text-[#65B741] font-bold hover:underline" to="/dev">ডেভেলপার</NavLink>
+                        </nav>
+
+
+                    </footer>
+                    <h1 className='text-center mb-5'>
+                        Copyright © 2024 - All right reserved
+                    </h1>
+                </div>
+            </div>
         </div>
     );
 };
