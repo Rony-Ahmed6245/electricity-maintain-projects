@@ -1,203 +1,84 @@
-import bg from '../assets/bg.jpg'
-import bg2 from '../assets/bg2.jpg'
-import bg3 from '../assets/bg3.jpg'
-import bg4 from '../assets/bg4.jpg'
-import bg5 from '../assets/bg-5.jpg'
-import meor1 from '../assets/1.png'
-import meor2 from '../assets/2.png'
-import meor3 from '../assets/3.png'
-import meor4 from '../assets/4.png'
-import meor5 from '../assets/5.png'
-import meor6 from '../assets/6.png'
-import { NavLink } from 'react-router-dom'
-import { FiPhoneOutgoing } from "react-icons/fi";
-import { FaFacebook } from "react-icons/fa6";
-import { Carousel } from 'react-responsive-carousel'
+import { PiCopyrightLight } from "react-icons/pi";
+
+import { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { FaGithub } from "react-icons/fa";
-import { HiMiniGlobeAlt } from "react-icons/hi2";
+import { Link, useLoaderData } from "react-router-dom";
+import { PiUsers } from "react-icons/pi";
+import { GrUserSettings } from "react-icons/gr";
+import Swal from "sweetalert2";
+
 
 const Home = () => {
+    const data = useLoaderData([])
+    // console.log(data);
+
+
+    const [users, setUsers] = useState([]);
+    useEffect(() => {
+        fetch("https://electricity-server.vercel.app/v1/reportDatas")
+            .then((res) => res.json())
+            .then((data) => {
+                setUsers(data);
+            })
+    }, []);
+
+    // console.log(users);
+
+const handelCopyRightText = () =>{
+    Swal.fire({
+        title: "এই ওয়েবসাইটে সকল তথ্য কপিরাইট আইন, ২০০০ এর আওতাধীন !",
+        showClass: {
+          popup: `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+          `
+        },
+        hideClass: {
+          popup: `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+          `
+        }
+      });
+}
+
+
+
     return (
-        <div className='bg1'>
-            <div className='max-w-5xl mx-auto bg-white  shadow-2xl' >
+        <div className='bg-[#2A3A99]  min-h-screen pb-20 '>
+            <div className="max-w-6xl mx-auto">
 
-                {/* ------------------banner ------------------ */}
-                <Carousel
-                    autoPlay
-                    infiniteLoop
-                >
-                    <div>
-                        <img src={bg} alt="" loading="lazy" />
-                    </div>
-                    <div>
-                        <img src={bg2} alt="" loading="lazy" />
-                    </div>
-                    <div>
-                        <img src={bg3} alt="" loading="lazy" />
-                    </div>
-                    <div>
-                        <img src={bg4} alt="" loading="lazy" />
-                    </div>
-                    <div>
-                        <img src={bg5} alt="" loading="lazy" />
-                    </div>
-                </Carousel>
-
-                <marquee className="text-sm text-black">ভাঙ্গুড়া পৌরসভার মধ্যে যে কোন স্থানের সোলার বাতি, বৈদ্যূতিক বাতি নষ্ট থাকলে আপনি আমাদের  অভিযোগ করুন।</marquee>
-
-
-                {/* -----------card  ----------------------*/}
-                <h1 className='text-center text-xl mt-10 mb-10'>----ভাঙ্গুড়া পৌরসভার কার্যরত ব্যাক্তিবর্গ --- </h1>
-                <div className='grid grid-cols-1 md:grid-cols-2  px-4 lg:grid-cols-3 gap-4 mb-20'>
-                   
- 
-                    {/* card  */}
-                    <div className="">
-                        <div className=" border h-[350px] rounded-md p-10 shadow-md">
-                            <div className=" ">
-                                <div className="flex justify-center items-center gap-4 pt-6 ">
-                                    <img className="w-[100px] md:w-[100px]  rounded-full" src={meor1} alt="" />
-                                </div>
-                                <div className="space-y-1 p-3">
-                                    <h1 className="text-center text-[15px] font-bold text-gray-600 uppercase">আলহাজ্ব মোঃ গোলাম হাসনাইন রাসেল</h1>
-                                    <p className="text-center text-[12px] font-semibold text-[#65B741]">মেয়র, ভাঙ্গুড়া পৌরসভা।</p>
-                                   
-                                </div>
-                                <div className="flex justify-center items-center mt-2 gap-4 pb-5">
-
-
-                                    <a target='_blank' href="#" ><FiPhoneOutgoing  className=" text-2xl rounded-full text-[#65B741]" /></a>
-                                    <a target="_blank" href="#">< FaFacebook  className=" text-2xl text-[#65B741] " /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="">
-                        <div className=" border h-[350px] rounded-md p-10 shadow-md">
-                            <div className=" ">
-                                <div className="flex justify-center items-center gap-4 pt-6 ">
-                                    <img className="w-[100px] md:w-[100px]  rounded-full" src={meor4} alt="" />
-                                </div>
-                                <div className="space-y-1 p-3">
-                                    <h1 className="text-center text-[15px] font-bold text-gray-600 uppercase">মোঃ আমিনুল ইসলাম</h1>
-                                    <p className="text-center text-[12px] font-semibold text-[#65B741]">নির্বাহী প্রকৌশলী, ভাঙ্গুড়া পৌরসভা।</p>
-                                   
-                                </div>
-                                <div className="flex justify-center items-center mt-2 gap-4 pb-5">
-
-
-                                    <a target='_blank' href="#" ><FiPhoneOutgoing  className=" text-2xl rounded-full text-[#65B741]" /></a>
-                                    <a target="_blank" href="#">< FaFacebook  className=" text-2xl text-[#65B741] " /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div className="">
-                        <div className=" border h-[350px] rounded-md p-10 shadow-md">
-                            <div className=" ">
-                                <div className="flex justify-center items-center gap-4 pt-6 ">
-                                    <img className="w-[100px] md:w-[100px]  rounded-full" src={meor6} alt="" />
-                                </div>
-                                <div className="space-y-1 p-3">
-                                    <h1 className="text-center text-[15px] font-bold text-gray-600 uppercase">জনাব উত্তম কুমার সাহা</h1>
-                                    <p className="text-center text-[12px] font-semibold text-[#65B741]">পৌরনির্বাহী কর্মকর্তা, ভাঙ্গুড়া পৌরসভা।</p>
-                                   
-                                </div>
-                                <div className="flex justify-center items-center mt-2 gap-4 pb-5">
-
-
-                                    <a target='_blank' href="#" ><FiPhoneOutgoing  className=" text-2xl rounded-full text-[#65B741]" /></a>
-                                    <a target="_blank" href="#">< FaFacebook  className=" text-2xl text-[#65B741] " /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="">
-                        <div className=" border h-[350px] rounded-md p-10 shadow-md">
-                            <div className=" ">
-                                <div className="flex justify-center items-center gap-4 pt-6 ">
-                                    <img className="w-[100px] md:w-[100px]  rounded-full" src={meor5} alt="" />
-                                </div>
-                                <div className="space-y-1 p-3">
-                                    <h1 className="text-center text-[15px] font-bold text-gray-600 uppercase">জনাব নাজমুল হুদা</h1>
-                                    <p className="text-center text-[12px] font-semibold text-[#65B741]"> হিসাবরক্ষণ কর্মকর্তা, ভাঙ্গুড়া পৌরসভা।</p>
-                                   
-                                </div>
-                                <div className="flex justify-center items-center mt-2 gap-4 pb-5">
-
-
-                                    <a target='_blank' href="#" ><FiPhoneOutgoing  className=" text-2xl rounded-full text-[#65B741]" /></a>
-                                    <a target="_blank" href="#">< FaFacebook  className=" text-2xl text-[#65B741] " /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="">
-                        <div className=" border h-[350px] rounded-md p-10 shadow-md">
-                            <div className=" ">
-                                <div className="flex justify-center items-center gap-4 pt-6 ">
-                                    <img className="w-[100px] md:w-[100px]  rounded-full" src={meor3} alt="" />
-                                </div>
-                                <div className="space-y-1 p-3">
-                                    <h1 className="text-center text-[15px] font-bold text-gray-600 uppercase"> মোঃ নয়ন মাহমুদ</h1>
-                                    <p className="text-center text-[12px] font-semibold text-[#65B741]">     বিদ্যুৎ মিস্ত্রি, ভাঙ্গুড়া পৌরসভা।</p>
-                                   
-                                </div>
-                                <div className="flex justify-center items-center mt-2 gap-4 pb-5">
-
-
-                                    <a target='_blank' href="#" ><FiPhoneOutgoing  className=" text-2xl rounded-full text-[#65B741]" /></a>
-                                    <a target="_blank" href="#">< FaFacebook  className=" text-2xl text-[#65B741] " /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="">
-                        <div className=" border h-[350px] rounded-md p-10 shadow-md">
-                            <div className=" ">
-                                <div className="flex justify-center items-center gap-4 pt-6 ">
-                                    <img className="w-[100px] md:w-[100px]  rounded-full" src={meor2} alt="" />
-                                </div>
-                                <div className="space-y-1 p-3">
-                                    <h1 className="text-center text-[15px] font-bold text-gray-600 uppercase"> মোঃ এনামুল হক</h1>
-                                    <p className="text-center text-[12px] font-semibold text-[#65B741]">লাইনম্যান, ভাঙ্গুড়া পৌরসভা। </p>
-                                   
-                                </div>
-                                <div className="flex justify-center items-center mt-2 gap-4 pb-5">
-
-
-                                    <a target='_blank' href="#" ><FiPhoneOutgoing  className=" text-2xl rounded-full text-[#65B741]" /></a>
-                                    <a target="_blank" href="#">< FaFacebook  className=" text-2xl text-[#65B741] " /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                <div>
+                    <h1 className="text-sm text-center uppercase pt-20 font-mono text-white">আপনাকে </h1>
+                    <h1 className="text-6xl text-center font-extrabold  font-mono text-white">স্বাগতম </h1>
+                    <h1 className="text-3xl text-center uppercase  font-mono text-white">আলোকিত ভাঙ্গুড়া পৌরসভায়</h1>
 
 
                 </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-5 md:px-10 px-5 mt-5">
+                    
+                    <div className="  border rounded image2 p-2">
+                        <h1 className="uppercase text-white font-mono text-4xl text-center  ">{data.length}</h1>
+                        <h1 className="uppercase text-white font-mono text-center text-sm">অবশিষ্ট অপেক্ষমান বাতি</h1>
+                    </div>
 
-                {/* -------------------footer  ------------------*/}
-                <hr />
-                <div className='bg-base-200 pb-5'>
-                    <footer className="footer footer-content py-10 flex justify-center  text-base-content rounded">
-                        <nav className="grid grid-flow-col gap-4">
-                            <NavLink className="hover:text-[#65B741] font-bold hover:underline" to="/">হোম</NavLink>
-                            <NavLink className="hover:text-[#65B741] font-bold hover:underline" to="/reportBox">অভিযোগ</NavLink>
-                            <NavLink className="hover:text-[#65B741] font-bold hover:underline" to="/viewWork"> কার্যবলি   </NavLink>
-                            <NavLink className="hover:text-[#65B741] font-bold hover:underline" to="/login">লগইন</NavLink>
-                            <NavLink className="hover:text-[#65B741] font-bold hover:underline" to="/dev">ডেভেলপার</NavLink>
-                        </nav>
-
-
-                    </footer>
-                    <h1 className='text-center mb-5'>
-                        Copyright © 2024 - All right reserved
-                    </h1>
+                    <div className={` rounded border image2 p-2`}>
+                        <h1 className="uppercase text-white font-mono text-4xl text-center ">{users.length}</h1>
+                        <h1 className="uppercase text-white font-mono text-center text-sm">গ্রাহক অভিযোগ</h1>
+                    </div>
+                </div>
+                <div className="grid grid-cols-2 gap-5 p-4 mt-10">
+                    <Link to={'/cv'} className="border p-2 rounded image2 text-white font-mono flex justify-center items-center gap-1">
+                        <PiUsers className="text-xl" /> পরিচিতি
+                    </Link>
+                    <Link to={'/dev'} className="border p-2 rounded image2 text-white font-mono flex justify-center items-center gap-2">
+                        <GrUserSettings className="text-xl" /> ডেভেলপার
+                    </Link>
                 </div>
             </div>
+            <div onClick={handelCopyRightText} className="fixed top-4 text-xl text-white right-2"><PiCopyrightLight /></div>
         </div>
     );
 };
